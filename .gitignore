@@ -40,7 +40,6 @@ lerna-debug.log*
 
 # OS files
 Thumbs.db
-.DS_Store
 
 # Testing
 coverage/
@@ -53,3 +52,21 @@ playwright/.cache/
 *.tmp
 *.temp
 .cache/
+
+# --- added for Antigravity/indexer parity (auto) ---
+out/
+target/
+.next/
+.turbo/
+.vercel/
+graphify-out/
+.reports/
+__pycache__/
+.venv/
+venv/
+DerivedData/
+.gradle/
+.expo/
+.env.*
+
+!.env.example
