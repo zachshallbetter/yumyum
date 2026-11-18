@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "YumYum"
+abstract: >-
+  A framework-agnostic library for interactive eating animations, progress
+  loaders and delete transitions, for React and vanilla JavaScript.
+type: software
+authors:
+  - family-names: Shallbetter
+    given-names: Zach
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/zachshallbetter/yumyum"
+keywords:
+  - animation
+  - react
+  - svg
+  - particles

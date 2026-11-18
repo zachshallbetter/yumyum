@@ -98,6 +98,34 @@ function App() {
 
 For more examples, refer to the [examples guide](docs/examples.md) or the [API reference](docs/api-reference.md).
 
+## Repository map
+
+| Path | Contents |
+|---|---|
+| `lib/` | Library entry point (`lib/index.ts`), the shared `EatingEngine` (`lib/core/`) and the vanilla `YumEater` class (`lib/vanilla/`) |
+| `components/` | React components (`YumItem`, `Crumbs`) and the higher-level animations in `components/animations/` (loaders, progress, image eating, delete) |
+| `hooks/` | React hooks (`useYumYum`, `useShapeEater`) |
+| `utils/`, `types.ts` | Geometry, image and audio helpers; shared types |
+| `App.tsx`, `index.tsx`, `index.html`, `data/` | The demo application |
+| `docs/` | Documentation: [index](docs/index.md), [architecture](docs/architecture.md), [development](docs/development.md) |
+
+## Verification
+
+The repository has no automated test suite. These commands check that it type-checks and builds (they are what CI and publishing use):
+
+```bash
+pnpm install
+pnpm build:lib   # tsc, then the library build into dist/
+pnpm build       # the demo app into dist-demo/
+pnpm dev         # run the demo app and check behavior by eye
+```
+
+## Status and limitations
+
+- Version `1.0.0` in `package.json`.
+- Behavior is checked by hand in the demo app; there are no unit or visual regression tests.
+- React is an optional peer dependency (`^18.0.0 || ^19.0.0`); the vanilla `YumEater` class does not need it.
+
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
