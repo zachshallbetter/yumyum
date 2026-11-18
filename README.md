@@ -111,7 +111,7 @@ For more examples, refer to the [examples guide](docs/examples.md) or the [API r
 
 ## Verification
 
-The repository has no automated test suite. These commands check that it type-checks and builds (they are what CI and publishing use):
+The repository has no automated test suite. These commands check that it type-checks and builds (CI runs `pnpm build`):
 
 ```bash
 pnpm install
